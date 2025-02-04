@@ -1,0 +1,44 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+.card__img {
+	border-radius: 20px;
+	box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+
+	object-fit: cover;
+	aspect-ratio: 37 / 18;
+}
+.card__body {
+	padding: 20px 24px;
+	box-shadow: 0 4px 25px 0 rgba(0, 0, 0, 0.05);
+	background: #fff;
+	border-radius: 20px;
+}
+.card__title {
+	margin-bottom: 5px;
+	font-weight: 800;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #000;
+}
+.card__price {
+	margin-bottom: 25px;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #00ae6c;
+}
+.card__list {
+	padding-left: 22px;
+	margin-bottom: 25px;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 14px;
+	font-size: 14px;
+	line-height: 1.2;
+}
+.card__list--item {
+	list-style: disc;
+}

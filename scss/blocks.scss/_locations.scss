@@ -1,0 +1,45 @@
+.locations {
+   @include scrollTopMargin;
+}
+.locations__row {
+    margin-bottom: 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    column-gap: 30px;
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
+}
+.locations-title {
+    max-width: 430px;    
+}
+.locations__controls {
+    display: flex;
+    column-gap: 20px;
+    
+    @include tablet {
+        column-gap: 10px;
+    }
+    @include mobile {
+        display: none;
+    }
+
+    &--mobile {
+        margin-top: 20px;
+        display: none;        
+
+        @include mobile {
+            display: flex;
+            column-gap: 10px;
+        }
+    }
+}
+.locations__controls-img {    
+    @include tablet {
+        width: 42px;
+        height: 42px;
+    }
+}

@@ -1,0 +1,50 @@
+.benefits {
+	 @include scrollTopMargin;
+}
+.benefits__row {
+	display: flex;
+	column-gap: 30px;
+}
+.benefins__img,
+.benefins__desc {
+	flex: 1;
+}
+.benefins__img {
+	text-align: center;
+
+	@include mobile {
+		display: none;
+	}
+}
+.benefits__title {
+	margin-bottom: 10px;
+	font-size: 36px;
+	font-weight: 800;
+	line-height: 1.2;
+
+	@include tablet {
+		font-size: 26px;
+	}
+	@include mobile {
+		font-size: 24px;
+	}
+}
+.benefins__text {
+	margin-bottom: 30px;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #2f2f2f;
+
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5em;
+
+	@include tablet {
+		margin-bottom: 20px;
+	}
+}
+.benefits__list {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+}

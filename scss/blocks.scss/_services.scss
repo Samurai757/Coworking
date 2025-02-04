@@ -1,0 +1,30 @@
+.services {
+     @include scrollTopMargin;
+}
+.services__title {
+    max-width: 570px;
+    margin-bottom: 40px;
+
+    @include mobile {
+        margin-bottom: 20px;
+    }
+}
+.services__list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px 30px;
+
+    @include mobile {
+        gap: 20px;
+    }
+}
+.services__list-item {
+    max-width: 270px;    
+
+    @include tablet {
+        max-width: 354px;
+    }
+    
+}

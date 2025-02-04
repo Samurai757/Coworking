@@ -1,0 +1,34 @@
+.header {
+    padding: 40px 0;
+
+    @include mobile {
+        padding: 20px 0;
+    }
+}
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+.header__logo {
+    max-width: 169px;
+    // height: 23px;
+    // flex-shrink: 0; 
+    @include mobile {    
+        max-width: 117px;
+        height: 16px;
+    }
+}
+
+.header__nav {
+    @include mobile {
+        display: none;
+    }
+}
+.header__nav-btn {
+    display: none; 
+    @include mobile {
+        display: block;
+    }
+}

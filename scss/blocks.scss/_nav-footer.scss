@@ -1,0 +1,17 @@
+.nav-footer {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+    font-size: 14px;
+
+    @include mobile {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+a.nav-footer__link {
+    transition: color 0.2s ease-in;
+}
+a.nav-footer__link:hover {
+    color: aquamarine;
+}

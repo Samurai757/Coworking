@@ -1,0 +1,39 @@
+.benefit {
+	display: flex;
+	column-gap: 30px;
+	align-items: flex-start;
+
+	@include tablet {
+		column-gap: 20px;
+	}
+	@include mobile {
+		column-gap: 15px;
+	}
+}
+.benefit__img {
+	flex-shrink: 0;
+
+	@include tablet {
+		width: 42px;
+		height: 42px;
+	}
+}
+.benefit__desc {
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+
+	font-size: 14px;
+	line-height: 1.5;
+	color: #2f2f2f;
+}
+.benefin__title {
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 1;
+	color: #000;
+
+	@include tablet {
+		font-size: 18px;
+	}
+}

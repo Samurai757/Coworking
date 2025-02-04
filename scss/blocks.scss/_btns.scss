@@ -1,0 +1,100 @@
+.btn-dark,
+a.btn-dark {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px 20px;
+	background-color: #000;
+	border-radius: 80px;
+	color: #fff;
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+		background-color: #555;
+	}
+
+	&--wide {
+		width: 100%;
+	}
+}
+.btn-green,
+a.btn-green {
+	display: inline-block;
+	padding: 10px 20px;
+	border-radius: 80px;
+	background-color: #00ae6c;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+		background-color: #449b7a;
+	}
+}
+.btn-outline,
+a.btn-outline {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 9px 20px;
+	border: 1px solid #fff;
+	border-radius: 80px;
+	color: #fff;
+	transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+	&:hover {
+		background-color: #fff;
+		color: #000;
+	}
+}
+.btn-price,
+a.btn-price {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 9px 20px;
+	border: 1px solid #000;
+	border-radius: 80px;
+	color: #000;
+	transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
+	&:hover {
+		background-color: #000;
+		color: #fff;
+	}
+}
+.btn-tg,
+a.btn-tg {
+	display: inline-flex;
+	column-gap: 10px;
+
+	padding: 10px 20px;
+	border-radius: 80px;
+	background-color: #039be5;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+		background-color: #52c2fa;
+	}
+}
+.btn-whatsapp,
+a.btn-whatsapp {
+	display: inline-flex;
+	column-gap: 10px;
+
+	padding: 10px 20px;
+	border-radius: 80px;
+	background-color: #00ae6c;
+	font-size: 16px;
+	font-weight: 700;
+	color: #fff;
+	transition: background-color 0.2s ease-in;
+
+	&:hover {
+		background-color: #16ef9c;
+	}
+}

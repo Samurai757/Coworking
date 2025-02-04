@@ -1,0 +1,45 @@
+.mobile-nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+
+	display: flex;
+	flex-direction: column;
+
+	// display: none;
+	opacity: 0;
+	pointer-events: none;
+    transition: all 0.2s ease-in;
+
+	&--open {
+		// display: flex;
+		opacity: 1;
+		pointer-events: all;
+	}
+}
+.mobile-nav__header {
+	padding: 20px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.mobile-nav__logo {
+	@include mobile {    
+        max-width: 117px;
+        height: 16px;
+    }
+}
+.logo {
+}
+.mobile-nav__btn {
+}
+.mobile-nav__body {
+	flex-grow: 1;
+	background-color: #f6f6f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
