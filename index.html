@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no">
+    <title>Coworks</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css">
+    <link rel="icon" type="image/x-icon" href="./img/favaicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/favaicons/apple-touch-icon.png">
+</head>
+
+<body>
+    <header class="header" id="top">
+        <div class="container container--mobile-fluid">
+            <div class="header__row">
+                <a href="#!" class="header__logo logo">
+                    <img src="./img/icons/logo.svg" alt="Coworks">
+                </a>
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#location" class="nav__link">Локация</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#services" class="nav__link">Сервис</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#price" class="nav__link">Тарифы</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#map" class="nav__link">Расположение</a>
+                        </li>
+                        <li class="nav__item visible-desktop">
+                            <button class="btn-dark" data-action="modal">Оставить заявку</button>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__nav-btn" id="openMobileNav">
+                    <img src="./img/icons/nav-btn-open.svg" alt="open nav">
+                </button>
+            </div>
+        </div>
+    </header>
+    <section class="mobile-nav">
+        <h2 class="visually-hidden">Мобильная навигация</h2>
+        <div class="mobile-nav__header">
+            <a href="#!" class="mobile-nav__logo logo">
+                <img src="./img/icons/logo.svg" alt="Coworks">
+            </a>
+            <button class="mobile-nav__btn" id="closeMobileNav">
+                <img src="./img/icons/nav-btn-close.svg" alt="Close nav">
+            </button>
+        </div>
+        <div class="mobile-nav__body">
+            <ul class="mobile-nav-list">
+                <li><a href="#location">Локация</a></li>
+                <li><a href="#services">Сервис</a></li>
+                <li><a href="#price">Тарифы</a></li>
+                <li><a href="#map">Расположение</a></li>
+                <li><button class="btn-dark" data-action="modal">Оставить заявку</button></li>
+            </ul>
+        </div>
+
+    </section>
+    <main class="main">
+        <section class="promo">
+            <div class="container container--large">
+                <div class="promo__wrapper">
+                    <div class="promo__content">
+                        <h1 class="promo__title">Место где взлетают проекты</h1>
+                        <div class="promo__text">
+                            <p>Лучший коворкинг для фрилансеров и IT специалистов в центре города</p>
+                        </div>
+                        <div class="promo__btns">
+                            <button class="btn-green" data-action="modal">Оставить заявку</button>
+                            <a href="#benefits" class="btn-outline">Исследовать</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="benefits" id="benefits">
+            <div class="container">
+                <div class="benefits__row">
+                    <div class="benefins__img">
+                        <img src="./img/benefits/benefits-img.jpg" srcset="./img/benefits/benefits-img@2x.jpg 2x"
+                            alt="Coworking">
+                    </div>
+                    <div class="benefins__desc">
+                        <h2 class="benefits__title">Лучшее пространство для&nbsp;вашего бизнеса</h2>
+                        <div class="benefins__text">
+                            <p>Продумали все до мелочей. Для фрилансеров и компаний.</p>
+                        </div>
+                        <ul class="benefits__list">
+                            <li class="benefits__item">
+                                <div class="benefit">
+                                    <img class="benefit__img" src="./img/benefits/clock.svg" alt="icon">
+                                    <div class="benefit__desc">
+                                        <h3 class="benefin__title">Открыты 24 часа</h3>
+                                        <p>Наш коворкинг открыт 24/7, гарантируя вам свободу творчества в удобное для
+                                            вас время.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefit">
+                                    <img class="benefit__img" src="./img/benefits/snack.svg" alt="icon">
+                                    <div class="benefit__desc">
+                                        <h3 class="benefin__title">Бесплатные снэки и напитки</h3>
+                                        <p>Энергия на максимум. Наслаждайтесь бесплатными снэками и напитками, чтобы
+                                            зарядиться в любой момент.</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="benefits__item">
+                                <div class="benefit">
+                                    <img class="benefit__img" src="./img/benefits/game.svg" alt="icon">
+                                    <div class="benefit__desc">
+                                        <h3 class="benefin__title">Игровая зона отдыха</h3>
+                                        <p>Наша игровая зона доступна для вас. Идеальное место для перерывов и
+                                            вдохновения в любое время.</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="locations" id="location">
+            <div class="container">
+                <div class="locations__row">
+                    <div class="locations-title">
+                        <h2 class="title-section">Локации и рабочие пространства</h2>
+                    </div>
+
+                    <div class="locations__controls">
+                        <button class="prev">
+                            <img class="locations__controls-img" src="./img/icons/arrow-left.svg" alt="Prev">
+                        </button>
+                        <button class="next">
+                            <img class="locations__controls-img" src="./img/icons/arrow-right.svg" alt="Next">
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="container container--tablet-fluid container--mobile-no-padding">
+                <div class="slider">
+                    <div><img width="525" class="tns-lazy-img" src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./img/slider/slide-01.jpg" data-srcset="./img/slider/slide-01@2x.jpg 2x" alt="slide-01"></div>
+                    <div><img width="300" class="tns-lazy-img" src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./img/slider/slide-02.jpg" data-srcset="./img/slider/slide-02@2x.jpg 2x" alt="slide-02"></div>
+                    <div><img width="435" class="tns-lazy-img" src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./img/slider/slide-03.jpg" data-srcset="./img/slider/slide-03@2x.jpg 2x" alt="slide-03"></div>
+                    <div><img width="300" class="tns-lazy-img" src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./img/slider/slide-04.jpg" data-srcset="./img/slider/slide-04@2x.jpg 2x" alt="slide-04"></div>
+                    <div><img width="300" class="tns-lazy-img" src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./img/slider/slide-05.jpg" data-srcset="./img/slider/slide-05@2x.jpg 2x" alt="slide-05"></div>
+                    <div><img width="300" class="tns-lazy-img" src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./img/slider/slide-06.jpg" data-srcset="./img/slider/slide-06@2x.jpg 2x" alt="slide-06"></div>
+                    <div><img width="525" class="tns-lazy-img" src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./img/slider/slide-07.jpg" data-srcset="./img/slider/slide-07@2x.jpg 2x" alt="slide-07"></div>
+                    <div><img width="525" class="tns-lazy-img" src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./img/slider/slide-08.jpg" data-srcset="./img/slider/slide-08@2x.jpg 2x" alt="slide-08"></div>
+                    <div><img width="525" class="tns-lazy-img" src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="./img/slider/slide-09.jpg" data-srcset="./img/slider/slide-09@2x.jpg 2x" alt="slide-09"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="locations__controls locations__controls--mobile">
+                    <button class="prev">
+                        <img class="locations__controls-img" src="./img/icons/arrow-left.svg" alt="Prev">
+                    </button>
+                    <button class="next">
+                        <img class="locations__controls-img" src="./img/icons/arrow-right.svg" alt="Next">
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services__title">
+                    <h2 class="title-section">Сервисы</h2>
+                </div>
+                <div class="services__wrapper">
+                    <ul class="services__list">
+                        <li class="services__list-item service">
+                            <img src="./img/services/hand.svg" alt="hand" class="service__icon">
+                            <h3 class="service__title">Секретарь </h3>
+                            <p>Встреча гостей, пропусков, организация мероприятий — всё под контролем с нашим
+                                секретарем.</p>
+                        </li>
+                        <li class="services__list-item service">
+                            <img src="./img/services/wifi.svg" alt="wifi" class="service__icon">
+                            <h3 class="service__title">Wi-Fi & Ethernet </h3>
+                            <p>Безопасное соединение до 100 Мбит/с, IT-поддержка для вашей внутренней сети.</p>
+                        </li>
+                        <li class="services__list-item service">
+                            <img src="./img/services/printer.svg" alt="printer" class="service__icon">
+                            <h3 class="service__title">Печать, сканирование </h3>
+                            <p>Печать, сканирование, отправка документов по Wi-Fi — ваш бизнес без границ.</p>
+                        </li>
+                        <li class="services__list-item service">
+                            <img src="./img/services/cup.svg" alt="cup" class="service__icon">
+                            <h3 class="service__title">Кофе, чай, вода</h3>
+                            <p>Кофе, чай, вода — наши кофе-пойнты удовлетворят ваши вкусовые предпочтения.</p>
+                        </li>
+                        <li class="services__list-item service">
+                            <img src="./img/services/lock.svg" alt="lock" class="service__icon">
+                            <h3 class="service__title">Безопасная система&nbsp;доступа</h3>
+                            <p>3-уровневая система доступа обеспечивает безопасность в коворкинге и смарт-офисе.</p>
+                        </li>
+                        <li class="services__list-item service">
+                            <img src="./img/services/brush.svg" alt="brush" class="service__icon">
+                            <h3 class="service__title">Ежедневный клининг </h3>
+                            <p>Дневная и ночная уборка в CEO Rooms поддерживает порядок в каждой зоне.</p>
+                        </li>
+                        <li class="services__list-item service">
+                            <img src="./img/services/vidicon.svg" alt="vidicon" class="service__icon">
+                            <h3 class="service__title">Видеонаблюдение</h3>
+                            <p>Более 15 точек фиксации и архивное хранение на сервере — ваша безопасность важна.</p>
+                        </li>
+                        <li class="services__list-item service">
+                            <img src="./img/services/time.svg" alt="time" class="service__icon">
+                            <h3 class="service__title">Круглосуточный доступ</h3>
+                            <p>Работайте 24/7 в любой часовой пояс и обстоятельства — ваше пространство всегда открыто.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="price" id="price">
+            <div class="container">
+                <div class="price__title">
+                    <h2 class="title-section">Тарифы</h2>
+                </div>
+                <div class="price__cards">
+                    <article class="card">
+                        <img src="./img/price/card-01.jpg" srcset="./img/price/card-01@2x.jpg 2x" alt="price"
+                            class="card__img">
+                        <div class="card__body">
+                            <h3 class="card__title">Разовое посещение</h3>
+                            <div class="card__price">1 190 ₽</div>
+                            <ul class="card__list">
+                                <li class="card__list--item">Незакрепленное рабочее место</li>
+                                <li class="card__list--item">Скоростной безлимитный интернет</li>
+                                <li class="card__list--item">Монохромный принтер формата А4, сканер, копир</li>
+                                <li class="card__list--item">Чай, кофе, вода</li>
+                                <li class="card__list--item">Клиентское сопровождение</li>
+                                <li class="card__list--item">Без гостевых визитов</li>
+                                <li class="card__list--item">Переговорная комната отдельно</li>
+                                <li class="card__list--item">Без специальной скидки</li>
+                            </ul>
+                            <button class="btn-price" data-action="modal">Оставить заявку</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/price/card-02.jpg" srcset="./img/price/card-02@2x.jpg 2x" alt="price"
+                            class="card__img">
+                        <div class="card__body">
+                            <h3 class="card__title">Фрилансер</h3>
+                            <div class="card__price">16 990 ₽ / месяц</div>
+                            <ul class="card__list">
+                                <li class="card__list--item">Незакрепленное рабочее место</li>
+                                <li class="card__list--item">Скоростной безлимитный интернет</li>
+                                <li class="card__list--item">Монохромный принтер формата А4, сканер, копир</li>
+                                <li class="card__list--item">Чай, кофе, вода</li>
+                                <li class="card__list--item">Клиентское сопровождение</li>
+                                <li class="card__list--item">10 гостевых визитов в месяц</li>
+                                <li class="card__list--item">4 часа переговорной комнаты</li>
+                                <li class="card__list--item">скидка 30% на аренду переговорных</li>
+                            </ul>
+                            <button class="btn-price" data-action="modal">Оставить заявку</button>
+                        </div>
+                    </article>
+                    <article class="card">
+                        <img src="./img/price/card-03.jpg" srcset="./img/price/card-03@2x.jpg 2x" alt="price"
+                            class="card__img">
+                        <div class="card__body">
+                            <h3 class="card__title">Рабочее место</h3>
+                            <div class="card__price">22 990 ₽ / месяц</div>
+                            <ul class="card__list">
+                                <li class="card__list--item">Закрепленное рабочее место</li>
+                                <li class="card__list--item">Скоростной безлимитный интернет</li>
+                                <li class="card__list--item">Монохромный принтер формата А4, сканер, копир</li>
+                                <li class="card__list--item">Чай, кофе, вода</li>
+                                <li class="card__list--item">Клиентское сопровождение</li>
+                                <li class="card__list--item">10 гостевых визитов в месяц</li>
+                                <li class="card__list--item">8 часов переговорной комнаты</li>
+                                <li class="card__list--item">скидка 30% на аренду переговорных</li>
+                            </ul>
+                            <button class="btn-price" data-action="modal">Оставить заявку</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="container">
+                <div class="cta__wrapper">
+                    <div class="cta__content">
+                        <h2 class="cta__title">Остались вопросы?</h2>
+                        <div class="cta__text">
+                            <p>Напишите нам или закажите звонок, мы свяжемся с вами в течении 15 минут</p>
+                        </div>
+                        <div class="cta__btns">
+                            <a href="#!" class="btn-tg">
+                                <img src="./img/icons/tg.svg" alt="Telegram">Telegram
+                            </a>
+                            <a href="#!" class="btn-whatsapp">
+                                <img src="./img/icons/WhatsApp.svg" alt="WhatsApp"> WhatsApp
+                            </a>
+                            <button class="btn-outline" data-action="modal">Оставить заявку</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map" id="map">
+            <div class="container">
+                <div class="map__title">
+                    <h2 class="title-section">Расположение</h2>
+                </div>
+                <div class="map__desc">
+                    <p>Пресненская набережная, дом 12, 20 этаж.</p>
+                </div>
+                <iframe class="map__iframe"
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae7cf7fc057b44a509453cd4dd0f8e07d2dcc1598351fbe7aafa2e621ce2e52a2&amp;source=constructor"
+                    width="100%" height="400" frameborder="0">
+                </iframe>  
+            </div>
+        </section>
+        <section class="faq">
+            <div class="container">
+                <div class="faq__wrapper">
+                    <div class="faq_title">
+                        <h2 class="title-section">Ответы на частые вопросы</h2>
+                    </div>
+                    <div class="faq__topics">
+                        <section class="topic">
+                            <h3 class="topic__header">
+                                <button class="topic__btn" type="button">
+                                    <span class="topic__title">Как заказать пропуск</span>
+                                    <img src="./img/icons/btn-plus.svg" alt="open/close" class="topic__icon">
+                                </button>
+                            </h3>
+                            <div class="topic__content">
+                                <div class="topic__content-padding">
+                                    <p>Для заказа пропуска в наш коворкинг вы можете воспользоваться удобной онлайн
+                                        формой на нашем сайте. Просто заполните необходимую информацию, включая ваше имя,
+                                        контактные данные и предпочтительный срок пользования коворкингом. Наша команда 
+                                        оперативно обработает ваш запрос и свяжется с вами для уточнения деталей и 
+                                        подтверждения бронирования.
+                                    </p>
+                                    <p>Если у вас возникли вопросы или вам нужна дополнительная помощь при заказе пропуска,
+                                        не стесняйтесь обращаться к нашему отделу клиентского обслуживания. Мы готовы ответить
+                                        на все ваши запросы и предоставить подробную информацию о наших услугах. Вы также можете
+                                        связаться с нами по телефону или отправить электронное письмо, и наш специалист с
+                                        удовольствием поможет вам сделать заказ и подобрать оптимальное решение для ваших
+                                        потребностей.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="topic">
+                            <h3 class="topic__header">
+                                <button class="topic__btn" type="button">
+                                    <span class="topic__title">Как добраться</span>
+                                    <img src="./img/icons/btn-plus.svg" alt="open/close" class="topic__icon">
+                                </button>
+                            </h3>
+                            <div class="topic__content">
+                                <div class="topic__content-padding">
+                                    <p>Чтобы <a href="#!">добраться</a> в наш коворкинг, используйте общественный
+                                        транспорт, такой как метро или автобус. Наш офис расположен в непосредственной близости 
+                                        от станции метро, выходите на выходе, указанном в нашем адресе. Пешеходный подход к офису
+                                        обеспечен для вашего удобства.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="topic">
+                            <h3 class="topic__header">
+                                <button class="topic__btn" type="button">
+                                    <span class="topic__title">Где припарковаться</span>
+                                    <img src="./img/icons/btn-plus.svg" alt="open/close" class="topic__icon">
+                                </button>
+                            </h3>
+                            <div class="topic__content">
+                                <div class="topic__content-padding">
+                                    <p>Наш коворкинг предоставляет широкий выбор вариантов парковки для удобства наших
+                                        клиентов. Прямо возле здания нашего офиса расположены выделенные парковочные
+                                        места,где вы можете оставить свой автомобиль в течение всего вашего визита. Эти места
+                                        обеспечивают удобный доступ к нашему зданию, сокращая время и усилия, затрачиваемые
+                                        на поиск парковочного места.
+                                    </p>
+                                    <p>В нескольких минутах ходьбы от нашего коворкинга есть несколько общественных
+                                        парковочных зон, где вы можете оставить свой автомобиль, если парковочные
+                                        места прямо у нашего здания заняты.
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__col">
+                <div class="footer__logo">
+                    <img src="./img/footer/logo-footer.svg" alt="Coworks">
+                </div>
+                <div class="footer__nav">
+                    <ul class="nav-footer">
+                        <li class="nav-footer__inems">
+                            <a href="#location" class="nav-footer__link">Локация</a>
+                        </li>
+                        <li class="nav-footer__inems">
+                            <a href="#services" class="nav-footer__link">Сервис</a>
+                        </li>
+                        <li class="nav-footer__inems">
+                            <a href="#price" class="nav-footer__link">Тарифы</a>
+                        </li>
+                        <li class="nav-footer__inems">
+                            <a href="#map" class="nav-footer__link">Расположение</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__socials">
+                    <ul class="social-list">
+                        <li class="social-list__item">
+                            <a href="#!" class="social-list__link">
+                                <img src="./img/footer/telegram.svg" alt="Telegram">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#!" class="social-list__link">
+                                <img src="./img/footer/whatsApp.svg" alt="whatsApp">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#!" class="social-list__link">
+                                <img src="./img/footer/vk.svg" alt="VK">
+                            </a>
+                        </li>
+                        <li class="social-list__item">
+                            <a href="#!" class="social-list__link">
+                                <img src="./img/footer/mail.svg" alt="mail">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#top" class="top-link" id="scrollToTopBtn">
+        <img src="./img/icons/arrow-up.svg" alt="Arrow up">
+    </a>
+    <section class="modal">
+        <div class="modal__body">
+
+            <button class="modal__close" type="button" id="closeModal">
+                <img src="./img/icons/modal-close.svg" alt="Close">
+            </button>
+            <div class="modal__header">
+                <h2 class="modal__title">Заказать звонок</h2>
+                <p>Перезвоним в течении 15 минут</p>
+            </div>
+            <form class="modal__inputs">
+                <input type="text" class="input" placeholder="Имя">
+                <input type="text" class="input" placeholder="Телефон">
+
+                <label class="modal__checkbox-label">
+                    <input type="checkbox" class="real-checkbox visually-hidden">
+                    <span class="fake-checkbox"></span>
+                    Согласен на обработку персональных данных
+                </label>
+                <button class="btn-dark btn-dark--wide">Оставить заявку</button>
+            </form>
+
+        </div>
+    </section>
+
+    <script src="./js/tiny-slider/tiny-slider.js"></script>
+
+    <script src="./js/scrollToTop.js"></script>
+    <script src="./js/mobile-nav.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/accordion.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
